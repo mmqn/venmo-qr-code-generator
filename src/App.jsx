@@ -19,7 +19,7 @@ export default function App() {
 		if (qrCodeOutput.current) {
 			QRCode.toDataURL(
 				`https://venmo.com/${username}?txn=pay&amount=${paymentAmount}&note=${note}`,
-				{ color: qrCodeColors },
+				{ scale: 6, color: qrCodeColors },
 				(err, url) => {
 					if (err) console.error(err);
 					setQrCodeUri(url);
