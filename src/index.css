@@ -1,0 +1,54 @@
+@font-face {
+	font-family: IBM Plex Mono;
+	src: url('/public/IBMPlexMono-Text.otf');
+}
+
+html {
+	font-family: IBM Plex Mono, monospace;
+	font-size: 20px;
+}
+
+body {
+	margin: 0px;
+}
+
+#root {
+	background-color: white;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.qr-code-output {
+	margin-top: 20vh;
+}
+
+h3 {
+	margin: 10px;
+	text-align: center;
+	line-height: 2rem;
+}
+
+h4 {
+	font-size: 0.7rem;
+	color: gray;
+}
+
+img {
+	border-radius: 10px;
+}
+
+input[type='text'] {
+	font-family: IBM Plex Mono, monospace;
+	border: none;
+	font-size: 1.7rem;
+	width: 140px;
+}
+
+input[type='text']:focus {
+	outline: none;
+}
