@@ -30,13 +30,7 @@ export default function App() {
 
 	return (
 		<div className='container'>
-			<div className='qr-code-output'>
-				{paymentAmount ? (
-					<img ref={qrCodeOutput} src={qrCodeUri} />
-				) : (
-					<h4>(enter payment amount)</h4>
-				)}
-			</div>
+			<img ref={qrCodeOutput} src={qrCodeUri} />
 
 			<h3>
 				Venmo <u>@{username}</u>
